@@ -3,6 +3,12 @@ package com.github.sanchezih.excepciones._01_try_catch;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Video: https://www.youtube.com/watch?v=tqn_eUiJbSU
+ * 
+ * @author ihsanch
+ *
+ */
 public class Test4 {
 
 	/**
@@ -15,7 +21,7 @@ public class Test4 {
 		int z;
 
 		System.out.print("Ingrese y: ");
-		
+
 		try {
 			y = new Scanner(System.in).nextInt();
 

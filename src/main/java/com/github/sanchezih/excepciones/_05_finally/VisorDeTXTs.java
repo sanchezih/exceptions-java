@@ -1,4 +1,4 @@
-package com.github.sanchezih.excepciones._05_elfinally;
+package com.github.sanchezih.excepciones._05_finally;
 
 import java.io.BufferedReader;
 import java.io.File;

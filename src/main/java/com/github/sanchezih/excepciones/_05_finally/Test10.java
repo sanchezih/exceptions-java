@@ -1,5 +1,11 @@
-package com.github.sanchezih.excepciones._05_elfinally;
+package com.github.sanchezih.excepciones._05_finally;
 
+/**
+ * Video: https://www.youtube.com/watch?v=se0-2AhPjAw
+ * 
+ * @author ihsanch
+ *
+ */
 public class Test10 {
 
 	/**

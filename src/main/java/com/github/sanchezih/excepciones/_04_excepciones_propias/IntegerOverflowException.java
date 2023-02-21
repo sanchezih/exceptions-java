@@ -1,5 +1,10 @@
 package com.github.sanchezih.excepciones._04_excepciones_propias;
 
+/**
+ * 
+ * @author ihsanch
+ *
+ */
 public class IntegerOverflowException extends RuntimeException {
 
 	public IntegerOverflowException() {

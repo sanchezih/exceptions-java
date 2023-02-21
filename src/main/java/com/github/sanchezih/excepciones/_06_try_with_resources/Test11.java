@@ -1,5 +1,11 @@
-package com.github.sanchezih.excepciones._06_trywithresources;
+package com.github.sanchezih.excepciones._06_try_with_resources;
 
+/**
+ * Video: https://www.youtube.com/watch?v=q8jpgUn_Apk
+ * 
+ * @author ihsanch
+ *
+ */
 public class Test11 {
 
 	/**

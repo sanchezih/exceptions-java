@@ -1,4 +1,4 @@
-package com.github.sanchezih.excepciones._06_trywithresources;
+package com.github.sanchezih.excepciones._06_try_with_resources;
 
 import java.io.BufferedReader;
 import java.io.File;
