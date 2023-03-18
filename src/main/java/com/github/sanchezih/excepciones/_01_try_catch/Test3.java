@@ -3,6 +3,8 @@ package com.github.sanchezih.excepciones._01_try_catch;
 import java.util.Scanner;
 
 /**
+ * Prueba con manejo de excepciones y sus metodos
+ * 
  * Video: https://www.youtube.com/watch?v=vhkhmCmNG_4
  * 
  * @author ihsanch
@@ -10,9 +12,6 @@ import java.util.Scanner;
  */
 public class Test3 {
 
-	/**
-	 * Prueba con manejo de excepciones y sus metodos
-	 */
 	public static void main(String[] args) {
 
 		int x = 10;
@@ -22,11 +21,14 @@ public class Test3 {
 		System.out.print("Ingrese y: ");
 
 		try {
-			y = new Scanner(System.in).nextInt();
+			Scanner scanner = new Scanner(System.in);
+			y = scanner.nextInt();
 
 			z = x / y; // Divido 'x' sobre 'y' y guardo el resultado en 'z'
 
 			System.out.println("Resultado: " + z);
+
+			scanner.close();
 
 		} catch (Exception ex) {
 			System.out.println("Error: " + ex.getMessage());

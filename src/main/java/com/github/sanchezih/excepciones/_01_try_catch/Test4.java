@@ -4,6 +4,8 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
+ * Prueba con manejo de excepciones (multicatch)
+ * 
  * Video: https://www.youtube.com/watch?v=tqn_eUiJbSU
  * 
  * @author ihsanch
@@ -11,9 +13,6 @@ import java.util.Scanner;
  */
 public class Test4 {
 
-	/**
-	 * Prueba con manejo de excepciones (multicatch)
-	 */
 	public static void main(String[] args) {
 
 		int x = 10;
@@ -23,14 +22,17 @@ public class Test4 {
 		System.out.print("Ingrese y: ");
 
 		try {
-			y = new Scanner(System.in).nextInt();
+			Scanner scanner = new Scanner(System.in);
+			y = scanner.nextInt();
 
 			z = x / y; // Divido 'x' sobre 'y' y guardo el resultado en 'z'
 
 			System.out.println("Resultado: " + z);
 
+			scanner.close();
+
 		} catch (InputMismatchException ime) {
-			System.out.println("No es un entero... ¬¬");
+			System.out.println("No es un entero");
 
 		} catch (ArithmeticException ae) {
 			System.out.println("No se puede dividir por cero");
@@ -40,7 +42,7 @@ public class Test4 {
 			ex.printStackTrace(System.out);
 		}
 
-		System.out.println("Adiós");
+		System.out.println("Adios");
 	}
 
 }
