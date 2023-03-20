@@ -1,4 +1,4 @@
-package com.github.sanchezih.excepciones._02_unchecked_exceptions._02_unchecked_exceptions;
+package com.github.sanchezih.excepciones._03_checked_vs_unchecked;
 
 public class Persona {
 

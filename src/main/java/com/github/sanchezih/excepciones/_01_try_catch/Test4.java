@@ -6,8 +6,6 @@ import java.util.Scanner;
 /**
  * Prueba con manejo de excepciones (multicatch)
  * 
- * Video: https://www.youtube.com/watch?v=tqn_eUiJbSU
- * 
  * @author ihsanch
  *
  */
@@ -31,13 +29,22 @@ public class Test4 {
 
 			scanner.close();
 
-		} catch (InputMismatchException ime) {
+		}
+
+		// Hay que importarla porque no esta en java.lang sino en java.util
+		catch (InputMismatchException ime) {
 			System.out.println("No es un entero");
 
-		} catch (ArithmeticException ae) {
+		}
+
+		catch (ArithmeticException ae) {
 			System.out.println("No se puede dividir por cero");
 
-		} catch (Exception ex) {
+		}
+
+		// Esta va ultima. Si ocurre una excepcion no prevista, este ultimo catch la
+		// capturara
+		catch (Exception ex) {
 			System.out.println("Error: " + ex.getMessage());
 			ex.printStackTrace(System.out);
 		}

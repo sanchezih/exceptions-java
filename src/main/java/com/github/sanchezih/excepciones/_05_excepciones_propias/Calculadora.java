@@ -1,24 +1,16 @@
-package com.github.sanchezih.excepciones._02_unchecked_exceptions._01_throw_vs_throws;
+package com.github.sanchezih.excepciones._05_excepciones_propias;
 
 public class Calculadora {
 
-	/**
-	 * 
-	 * @param num
-	 * @return
-	 */
 	public int factorial(int num) {
 
 		if (num < 0) {
 			throw new ArithmeticException("No se puede calcular el factorial de un numero negativo");
-			// Ante la duda: RuntimeException
 		}
 
 		if (num > 12) {
-			throw new IllegalArgumentException(
+			throw new IntegerOverflowException( // Ahora puedo lanzar mis propias excepciones
 					"Por limitaciones tecnicas, no se puede calcular el factorial de un entero mayor que 12");
-			// Ante la duda: RuntimeException
-
 		}
 
 		int fact = 1;

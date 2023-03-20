@@ -1,25 +1,23 @@
-package com.github.sanchezih.excepciones._04_excepciones_propias;
+package com.github.sanchezih.excepciones._02_throw;
 
 import java.util.Scanner;
 
 /**
- * Video: https://www.youtube.com/watch?v=v43Tl9dM_PE
+ * Lanzamiento manual de excepciones
  * 
  * @author ihsanch
  *
  */
-public class Test9 {
+public class Test6 {
 
-	/**
-	 * Manejo de excepciones propias
-	 */
 	public static void main(String[] args) {
 		int y, z;
 		System.out.print("Ingrese y: ");
 		y = new Scanner(System.in).nextInt();
 		z = new Calculadora().factorial(y);
 		System.out.println("Resultado: " + z);
-		System.out.println("Adiós!");
+		System.out.println("Adios");
+
 	}
 
 }

@@ -5,8 +5,6 @@ import java.util.Scanner;
 /**
  * Prueba con manejo de excepciones (un solo catch general)
  * 
- * Video: https://www.youtube.com/watch?v=d_A95745GCA
- * 
  * @author ihsanch
  *
  */
@@ -14,14 +12,14 @@ public class Test2 {
 
 	public static void main(String[] args) {
 
-		// Instrucciones sin posibles excepciones
+		// Instrucciones que no podrian fallar
 		int x = 10;
 		int y;
 		int z;
 
 		System.out.print("Ingrese y: ");
 
-		// Instrucciones con posibles excepciones
+		// Try: Instrucciones que podrian fallar
 		try {
 
 			Scanner scanner = new Scanner(System.in);
@@ -34,12 +32,13 @@ public class Test2 {
 			scanner.close();
 		}
 
-		// Logica para capturar excepciones
+		// Catch: Logica para capturar excepciones
 		catch (Exception ex) {
 			System.out.println("Ocurrio un error");
 		}
 
-		// Bloque opcional. Se ejecuta siempre
+		// Finally: Bloque opcional. Se ejecutara siempre independientemente de si se
+		// capturo alguna excepcion o no
 		finally {
 
 		}

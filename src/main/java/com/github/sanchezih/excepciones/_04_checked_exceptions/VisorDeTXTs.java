@@ -1,4 +1,4 @@
-package com.github.sanchezih.excepciones._03_checked_exceptions;
+package com.github.sanchezih.excepciones._04_checked_exceptions;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,7 +13,15 @@ public class VisorDeTXTs {
 	 * propagar excepciones checked
 	 */
 
+	/**
+	 * Metodo que muestra el contenido del archivo recibido como param
+	 * 
+	 * @param ruta
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
 	public void mostrarTxt(String ruta) throws FileNotFoundException, IOException { // Lanzo 2 tipos de excepciones
+																					// checked
 		File elArchivo = new File(ruta);
 		BufferedReader br = new BufferedReader(new FileReader(elArchivo));
 		System.out.println(br.readLine());
