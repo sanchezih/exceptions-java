@@ -13,12 +13,12 @@ public class Calculadora {
 					"Por limitaciones tecnicas, no se puede calcular el factorial de un entero mayor que 12");
 		}
 
-		int fact = 1;
+		int factorial = 1;
 
 		for (int i = 2; i <= num; i++) {
-			fact = fact * i;
+			factorial = factorial * i;
 		}
 
-		return fact;
+		return factorial;
 	}
 }

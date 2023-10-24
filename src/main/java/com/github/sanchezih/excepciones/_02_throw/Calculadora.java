@@ -20,12 +20,12 @@ public class Calculadora {
 			// Ante la duda: RuntimeException
 		}
 
-		int fact = 1;
+		int factorial = 1;
 
 		for (int i = 2; i <= numero; i++) {
-			fact = fact * i;
+			factorial = factorial * i;
 		}
 
-		return fact;
+		return factorial;
 	}
 }

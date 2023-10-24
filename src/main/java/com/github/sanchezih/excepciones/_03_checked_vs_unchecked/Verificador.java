@@ -11,6 +11,10 @@ package com.github.sanchezih.excepciones._03_checked_vs_unchecked;
  */
 public class Verificador {
 
+	/**
+	 * 
+	 * @param x
+	 */
 	public static void checkEsNegativo(int x) /* throws RuntimeException */ { // El throws es opcional porque
 																				// RuntimeException es 'unchecked'
 		if (x < 0) {
@@ -18,6 +22,11 @@ public class Verificador {
 		}
 	}
 
+	/**
+	 * 
+	 * @param x
+	 * @throws Exception
+	 */
 	public static void checkEsNegativo2(int x) throws Exception { // El throws es obligatorio porque Exception es
 																	// 'checked' por el compilador
 		if (x < 0) {
